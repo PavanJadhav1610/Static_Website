@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="\my_project\shopee\static\login_page.css">
+</head>
+<style>
+    h4{
+        color: rgb(6, 13, 1);
+        background-color: darkcyan;
+    }
+    h2{
+        background-color: aquamarine;
+        color: blueviolet;
+        text-align: center;
+        border-style: ridge;
+    
+    }
+    nav{
+        background-color: grey;
+        margin-bottom: 30%;
+    }
+    #home,#cart,#order,#log{
+    background-color: blue;
+    text-align: center;
+    } 
+    #redmi_4a,#redmi_9,#redmi_10pro,#redmi_11{
+        position: relative;
+        top: -400px
+    }
+    #narzo_20,#narzo_N53,#redmi_13T,#redmi_a1{
+        position: relative;
+        top: -350px
+    }
+    button{
+        background-color: chartreuse;
+        margin-left: 40%;
+    }
+    p{
+        text-align: center;
+    }
+    body{
+      border-style: double;
+    }
+
+    
+</style>
+<body>
+    <h4><marquee>------------------SHOP  ONLINE ------------------------------------ SHOP  ONLINE--------------------</marquee></h4>
+    <nav class="container-fluid">    
+        <div id="nav1">
+            <div class="row" id="navigation">
+                <h2>WELCOME  TO  ELECTRONICS  E-COMMERSE  WEBSITE</h2><br>
+                <div class="col-2">
+                    <input type="text" class="form-control" placeholder="Search Product Here" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </span>
+                 </div>
+                <div class="col-1" id="about_us">
+                    <a href="{% url 'about' %}">About_Us</a>
+                </div>
+                <div class="col-1" id="privacy_policy">
+                    <a href="{% url 'privacy' %}">Privacy_Policy</a>
+                </div>
+                <div class="col-1" id="contact_us">
+                    <a href="{% url 'contact' %}">Contact_US</a>
+                    <div>@90xxxxxxxx</div>
+                </div>
+                <div class="col-1" id="log1">
+                    <button id="log">Login</button>
+                </div>
+                <div class="col-1" id="home1">
+                    <button id="home">Home</button>
+                </div>
+                <div class="col-1" id="cart1">
+                    <button id="cart">My_Cart</button>
+                </div>
+                <div class="col-1" id="order1">
+                    <button id="order">My_Orders</button>
+                </div>
+            </div>
+          </div>
+    </nav>
+    
+    <div class="container-fluid" id="cont_1"> 
+        <div class="row">
+          <div class="col-3" id="redmi_4a">
+            <div><img src="\media\mi-redmi-4a-mzb5602in-original-imaex96ja2fd6ygz.webp" width="300" height="300"></div><br>
+            <p><b>Redmi-4a</b></p>
+            <button id="4a">Buy_@5999 rs</button>
+          </div>
+          <div class="col-3" id="redmi_9">
+            <div><img src="\media\images.jpeg" width="300" height="300"></div><br>
+            <p><b>Redmi-9</b></p>
+            <button id="r9">Buy_@8999 rs</button>
+          </div>
+          <div class="col-3" id="redmi_10pro">
+            <div><img src="\media\5d78a257-413b-46cc-9f12-c63c00e1a3b5.jpg" width="300" height="300"></div><br>
+            <p><b>Redmi-10pro</b></p>
+            <button id="r10">Buy_@10900 rs</button>
+          </div>
+          <div class="col-3" id="redmi_11">
+            <div><img src="\media\redmi11_images (1).jpeg" width="300" height="300"></div><br>
+            <p><b>Redmi-11</b></p>
+            <button id="r11">Buy_@10000 rs</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="container-fluid" id="cont_2">
+        <div class="row">
+          <div class="col-3" id="redmi_a1">
+            <div><img src="\media\redmi-a1-db-709x800-1662528262.jpg" width="300" height="300"></div><br>
+            <p><b>Redmi-A1</b></p>
+            <button id="A1">Buy_@10500 rs</button>
+          </div>
+          <div class="col-3" id="narzo_20">
+            <div><img src="\media\realme-narzo-20.jpg" width="300" height="300"></div><br>
+            <p><b>Redmi Narzo-20</b></p>
+            <button id="N20">Buy_@9500 rs</button>
+          </div>
+          <div class="col-3" id="narzo_N53">
+            <div><img src="\media\realme-narzo-n53-realme-db-657x800-1684393930.webp" width="300" height="300"></div><br>
+            <p><b>Redmi Narzo_N53</b></p>
+            <button id="N53">Buy_@10900 rs</button>
+          </div>
+          <div class="col-3" id="redmi_13T">
+            <div><img src="\media\Xiaomi-13T_featured-image-packshot-review-Recovered-Recovered.jpg" width="300" height="300"></div><br>
+            <p><b>Redmi-13T</b></p>
+            <button id="r13T">Buy_@12500 rs</button>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
